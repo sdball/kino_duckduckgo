@@ -1,4 +1,4 @@
-defmodule ExDuckSmartCellTest do
+defmodule KinoDuckDuckGoTest do
   use ExUnit.Case, async: true
 
   import Kino.Test
@@ -6,7 +6,7 @@ defmodule ExDuckSmartCellTest do
   setup :configure_livebook_bridge
 
   test "initial source uses the defaults" do
-    {_kino, source} = start_smart_cell!(ExDuckSmartCell, %{})
+    {_kino, source} = start_smart_cell!(KinoDuckDuckGo, %{})
 
     assert source == """
            api_result = ExDuck.query!(\"\")
@@ -22,7 +22,7 @@ defmodule ExDuckSmartCellTest do
       "topic" => "Elixir Language"
     }
 
-    {_kino, source} = start_smart_cell!(ExDuckSmartCell, attrs)
+    {_kino, source} = start_smart_cell!(KinoDuckDuckGo, attrs)
 
     assert source ==
              """

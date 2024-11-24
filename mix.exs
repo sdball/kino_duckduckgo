@@ -1,35 +1,35 @@
-defmodule ExDuckSmartCell.MixProject do
+defmodule KinoDuckDuckGo.MixProject do
   use Mix.Project
 
-  @version "0.1.4"
-  @github "https://github.com/sdball/ex_duck_smart_cell"
+  @version "0.1.5"
+  @github "https://github.com/sdball/kino_duckduckgo"
 
   def project do
     [
-      app: :ex_duck_smart_cell,
+      app: :kino_duckduckgo,
       version: @version,
       elixir: "~> 1.13",
-      description: "ExDuckSmartCell is a Livebook smart cell interface to ExDuck.",
+      description: "KinoDuckDuckGo is a Livebook smart cell interface to ExDuck.",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      name: "ExDuckSmartCell",
+      name: "KinoDuckDuckGo",
       source_url: @github,
       package: package(),
-      docs: docs(),
+      docs: docs()
     ]
   end
 
   def application do
     [
-      mod: {ExDuckSmartCell.Application, []}
+      mod: {KinoDuckDuckGo.Application, []}
     ]
   end
 
   defp deps do
     [
-      {:kino, "~> 0.6.2"},
+      {:kino, "~> 0.14.2"},
       {:ex_duck, "~> 0.1.3"},
-      {:ex_doc, "~> 0.27", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.27", only: :dev, runtime: false}
     ]
   end
 
@@ -40,8 +40,8 @@ defmodule ExDuckSmartCell.MixProject do
       source_ref: "v#{@version}",
       extras: [
         "README.md",
-        "LICENSE",
-      ],
+        "LICENSE"
+      ]
     ]
   end
 
