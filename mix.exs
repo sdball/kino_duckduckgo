@@ -9,7 +9,7 @@ defmodule KinoDuckDuckGo.MixProject do
       app: :kino_duckduckgo,
       version: @version,
       elixir: "~> 1.13",
-      description: "KinoDuckDuckGo is a Livebook smart cell interface to ExDuck.",
+      description: "DuckDuckGo instant answers integration with Livebook",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       name: "KinoDuckDuckGo",
