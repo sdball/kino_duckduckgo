@@ -1,7 +1,7 @@
 defmodule KinoDuckDuckGo.MixProject do
   use Mix.Project
 
-  @version "0.1.5"
+  @version "0.1.6"
   @github "https://github.com/sdball/kino_duckduckgo"
 
   def project do
